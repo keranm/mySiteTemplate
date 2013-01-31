@@ -5,4 +5,6 @@ This is a basic HTML template that I use to build out themes and page customisat
 
 Tools used
 =============
-[a Twitter Bootstrap](http://twitter.github.com/bootstrap/)
+* [Twitter Bootstrap](http://twitter.github.com/bootstrap/)
+* [LiveReload](http://livereload.com/)
+* [Less](http://lesscss.org/)
