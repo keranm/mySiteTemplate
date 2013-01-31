@@ -11,4 +11,4 @@ Tools used
 
 Usage
 ===========
-This project is really intended as a personal project, but hey, if the files help you in anyway - please feel free to use, share, build on, etc.
+This project is really intended as a personal project, but hey, if the files help you in anyway - please feel free to use, share, build on, etc. Free to share
