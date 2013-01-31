@@ -1,23 +1,42 @@
-@baseColor: rgb(223, 223, 223);
-@grayGradientBottom: rgb(245, 245, 245);
-@grayGradientTop: rgb(254, 254, 254);
+@baseColor:				rgb(223, 223, 223);
+@grayGradientBottom:	rgb(245, 245, 245);
+@grayGradientTop:		rgb(254, 254, 254);
+@fontFamily:			'Helvetica Neue', Helvetica, Arial, sans-serif;
+@orange:				rgb(228, 94, 29);
+@black:					rgb(2, 2, 2);
+@pageWidth:				900px;
+@headerHeight:			91px;
+@testBorder:			1px solid red;
 
+body {
+	font-family: @fontFamily;
+}
 
+/* Header Styles */
 header {
-  color: (@baseColor * 3);
-  border-bottom: 1px solid @baseColor;
-  height: 91px;
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%;
+	color: (@baseColor * 3);
+	border-bottom: 1px solid @baseColor;
+	height: @headerHeight;
 
-  background-color: @grayGradientBottom;
-  *background-color: @grayGradientBottom;
-  background-image: -moz-linear-gradient(top, @grayGradientTop, @grayGradientBottom);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@grayGradientTop), to(@grayGradientBottom));
-  background-image: -webkit-linear-gradient(top, @grayGradientTop, @grayGradientBottom);
-  background-image: -o-linear-gradient(top, @grayGradientTop, @grayGradientBottom);
-  background-image: linear-gradient(to bottom, @grayGradientTop, @grayGradientBottom);
-  background-repeat: repeat-x;
+	background-color: @grayGradientBottom;
+	*background-color: @grayGradientBottom;
+	background-image: -moz-linear-gradient(top, @grayGradientTop, @grayGradientBottom);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@grayGradientTop), to(@grayGradientBottom));
+	background-image: -webkit-linear-gradient(top, @grayGradientTop, @grayGradientBottom);
+	background-image: -o-linear-gradient(top, @grayGradientTop, @grayGradientBottom);
+	background-image: linear-gradient(to bottom, @grayGradientTop, @grayGradientBottom);
+	background-repeat: repeat-x;
+}
+
+header .wrapper {
+	height:	(@headerHeight - 1);
+	border-bottom: 1px solid white;
 }
 
 footer {
 
 }
+
