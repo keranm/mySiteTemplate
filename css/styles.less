@@ -1,14 +1,23 @@
-@the-border: 1px;
-@base-color: #333;
-@red:        #842210;
+@baseColor: rgb(223, 223, 223);
+@grayGradientBottom: rgb(245, 245, 245);
+@grayGradientTop: rgb(254, 254, 254);
+
 
 header {
-  color: (@base-color * 3);
-  border-bottom: @the-border solid @base-color;
+  color: (@baseColor * 3);
+  border-bottom: 1px solid @baseColor;
   height: 91px;
+
+  background-color: @grayGradientBottom;
+  *background-color: @grayGradientBottom;
+  background-image: -moz-linear-gradient(top, @grayGradientTop, @grayGradientBottom);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@grayGradientTop), to(@grayGradientBottom));
+  background-image: -webkit-linear-gradient(top, @grayGradientTop, @grayGradientBottom);
+  background-image: -o-linear-gradient(top, @grayGradientTop, @grayGradientBottom);
+  background-image: linear-gradient(to bottom, @grayGradientTop, @grayGradientBottom);
+  background-repeat: repeat-x;
 }
 
 footer {
-  color: (@base-color + #003300);
-  border-color: desaturate(@red, 10%);
+
 }

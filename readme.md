@@ -7,6 +7,7 @@ Tools used
 * [Twitter Bootstrap](http://twitter.github.com/bootstrap/)
 * [LiveReload](http://livereload.com/)
 * [Less](http://lesscss.org/)
+* [Hues](https://itunes.apple.com/us/app/hues/id411811718)
 
 Usage
 ===========
