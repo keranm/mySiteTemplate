@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>mySite Template</title>
+    <title>mySiteTemplate</title>
     <!-- Bootstrap Css -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <!-- Less -->
@@ -11,10 +11,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
+    <!-- GA Tracking -->
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-1447038-10']);
+      _gaq.push(['_setDomainName', 'keranmckenzie.com']); // Change this line per site
+      _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    <!-- end GA Tracking -->
     <header>
         <div class="container">
           <div class="wrapper">
-            <div class="name"><strong>keran</strong><span class="name_dots">:</span><span class="green">mckenzie</div></div>
+            <div class="name"><a href="http://www.keranmckenzie.com/"><strong>keran</strong><span class="name_dots">:</span><span class="green">mckenzie</span></a></div></div>
         </div>
       </header>
     </div>
@@ -84,6 +101,48 @@
             margin-bottom: 30px;
           }
 
+          li.myob {
+            background: url('img/myob_logo.png');
+            background-repeat: no-repeat;
+            background-position: left, middle;
+          }
+
+          li.tumblr {
+            background: url('img/tumblr_logo.png');
+            background-repeat: no-repeat;
+            background-position: left, middle;
+          }
+
+          li.blog {
+            background: url('img/wordpress.gif');
+            background-repeat: no-repeat;
+            background-position: left, middle;
+          }
+
+          li.linkedin {
+            background: url('img/linkedin.gif');
+            background-repeat: no-repeat;
+            background-position: left, middle;
+          }
+
+          li.flickr {
+            background: url('img/flickr.gif');
+            background-repeat: no-repeat;
+            background-position: left, middle;
+          }
+
+          li.twitter {
+            background: url('img/twitter_logo.png');
+            background-repeat: no-repeat;
+            background-position: left, middle;
+          }
+
+          li.gaQualified {
+            background: url('img/ga_logo.png');
+            background-repeat: no-repeat;
+            background-position: left, middle;
+          }
+
         </style>
         <div class="center">
             <p class="title hidden-phone">Hi, my name is Keran McKenzie</p>
@@ -92,7 +151,7 @@
             <p class="three visible-phone">Find me online</p>
             <ul>
               <li class="myob"><a href="http://www.myob.com.au/">MYOB Australia</a> - I'm the Platform Evangelist for the MYOB API</li>
-              <li class="blog"><a href="http://daily.keranmckenzie.com/">daily.keranmckenzie.com</a> - I'm going to try blogging more here under this domain</li>
+              <li class="tumblr"><a href="http://blog.keranmckenzie.com/">blog.keranmckenzie.com</a> - I'm going to try blogging more here under this domain</li>
               <li class="blog"><a href="http://www.studiowhiz.com/">studiowhiz.com</a> - my old blog (is in a holding pattern for now)</li>
               <li class="blog"><a href="http://church-resources.studiowhiz.com/">church-resources</a> - a resource I had started sharing media and resources for churches</li>
               <li class="linkedin"><a href="http://www.linkedin.com/in/keran">linkedin.com/in/keran</a> - for all networking purposes</li>
@@ -113,24 +172,27 @@
             <div class="span4">
               <h3>Me Online</h3>
               <ul>
-                <li><a href="http://www.twitter.com/keranm">Twitter: @keranm</a></li>
-                <li><a href="http://www.linkedin.com/in/keran">LinkedIn: keranm</a></li>
-                <li><a href="https://github.com/keranm">GitHub</a></li>
-                <li><a href="http://www.flickr.com/photos/studiowhiz">Flickr: Studiowhiz</a></li>
-                <li><a href="http://daily.keranmckenzie.com/">Blog: daily</a></li>
+                <li><a href="http://www.twitter.com/keranm"><i class="icon-bullhorn"></i> Twitter: @keranm</a></li>
+                <li><a href="http://www.linkedin.com/in/keran"><i class="icon-refresh"></i> LinkedIn: keranm</a></li>
+                <li><a href="https://github.com/keranm"><i class="icon-wrench"></i> GitHub</a></li>
+                <li><a href="http://www.flickr.com/photos/studiowhiz"><i class="icon-camera"></i> Flickr: Studiowhiz</a></li>
+                <li><a href="http://daily.keranmckenzie.com/" onclick="_gaq.push(['_link', 'http://blog.keranmckenzie.com']); return false;"><i class="icon-edit"></i> Blog: daily</a></li>
               </ul>
           </div>
           <div class="span4">
               <h3>Projects</h3>
               <ul>
-                <li><a href="http://dev.localwhiz.net/">Localwhiz - local discovery</a></li>
+                <li><a href="http://dev.localwhiz.net/" onclick="_gaq.push(['_link', 'http://dev.localwhiz.net']); return false;"><i class="icon-map-marker"></i> Localwhiz - local discovery</a></li>
+                <li><a href="http://keranm.github.com/theClock/"><i class="icon-time"></i> The Clock Project</a></li>
               </ul>
           </div>
           <div class="span4">
               <h3>Keran McKenzie</h3>
               <ul>
-                <li><a href="http://www.keranmckenzie.com/">KeranMcKenzie.com</a></li>
-                <li><a href="http://www.studiowhiz.com">Studiowhiz.com</a></li>
+                <li><a href="http://www.keranmckenzie.com/" onclick="_gaq.push(['_link', 'http://www.keranmckenzie.com']); return false;"><i class="icon-user"></i> KeranMcKenzie.com</a></li>
+                <li><a href="http://www.studiowhiz.com" onclick="_gaq.push(['_link', 'http://www.studiowhi.com']); return false;"><i class="icon-cog"></i> Studiowhiz.com</a></li>
+                <li>&nbsp;</li>
+                <li><a href="http://blog.keranmckenzie.com/ask" onclick="_gaq.push(['_link', 'http://blog.keranmckenzie.com']); return false;"><i class="icon-comment"></i> Ask me anything</a></li>
               </ul>
           </div>
         </div>
